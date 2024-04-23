@@ -84,8 +84,8 @@ public class Principal {
                 .filter(e -> e.getDataLancamento() != null && e.getDataLancamento().isAfter(dataBusca))
                 .forEach(e -> System.out.println(
                         "Temporada:  " + e.getTemporada() +
-                                " Episódio: " + e.getTitulo() +
-                                " Data lançamento: " + e.getDataLancamento().format(formatador)
+                                " | Episódio: " + e.getTitulo() +
+                                " | Data lançamento: " + e.getDataLancamento().format(formatador)
                 ));
     }
 }
